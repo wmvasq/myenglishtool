@@ -1,0 +1,45 @@
+{
+  "title": "MyFirstText",
+  "text": [
+    {
+      "myEnglishTool": "Hi learner! Today we’ll talk about software development. Do you know what software development means?",
+      "order": 1
+    },
+    {
+      "learner": "Yes, I think it means creating programs or applications using code.",
+      "order": 2
+    },
+    {
+      "myEnglishTool": "Exactly! It’s the process of designing, writing, testing, and maintaining code. What programming language are you interested in?",
+      "order": 3
+    },
+    {
+      "learner": "I like Flutter and Dart because I want to make mobile apps.",
+      "order": 4
+    },
+    {
+      "myEnglishTool": "Great choice! Flutter uses Dart to build apps for Android and iOS. Do you know what a widget is in Flutter?",
+      "order": 5
+    },
+    {
+      "learner": "Yes, a widget is basically an element in the app interface like a button or text.",
+      "order": 6
+    },
+    {
+      "myEnglishTool": "Perfect! Everything in Flutter is a widget — even layout and structure. Do you usually work alone or in a team?",
+      "order": 7
+    },
+    {
+      "learner": "I work in a small team with two other developers.",
+      "order": 8
+    },
+    {
+      "myEnglishTool": "Nice! Collaboration is key in software development. How do you share your code with your team?",
+      "order": 9
+    },
+    {
+      "learner": "We use GitHub to push and pull changes from our project repository.",
+      "order": 10
+    }
+  ]
+}
