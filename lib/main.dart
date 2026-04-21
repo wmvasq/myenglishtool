@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:myenglishtool/pages/add_conversation_page.dart';
 import 'package:myenglishtool/pages/conversations_list_page.dart';
+import 'package:myenglishtool/pages/progress_page.dart';
+import 'package:myenglishtool/pages/ai_practice_screen.dart';
+import 'package:myenglishtool/pages/path_to_english.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyApp());
 }
 
@@ -139,6 +145,44 @@ class _MyHomePageState extends State<MyHomePage> {
                       MaterialPageRoute(
                         builder: (_) => const ConversationListPage(),
                       ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text(
+                    'Progress',
+                    style: TextStyle(color: Color(0xFF000080)),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const ProgressPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text(
+                    'AI Practice',
+                    style: TextStyle(color: Color(0xFF000080)),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const AIPracticeScreen(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text(
+                    'PathToEnglish',
+                    style: TextStyle(color: Color(0xFF000080)),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const PathToEnglish()),
                     );
                   },
                 ),
