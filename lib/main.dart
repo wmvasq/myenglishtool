@@ -5,6 +5,7 @@ import 'package:myenglishtool/pages/conversations_list_page.dart';
 import 'package:myenglishtool/pages/progress_page.dart';
 import 'package:myenglishtool/pages/ai_practice_screen.dart';
 import 'package:myenglishtool/pages/path_to_english.dart';
+import 'package:myenglishtool/pages/settings_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -186,6 +187,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     );
                   },
                 ),
+                ListTile(
+                  title: Text(
+                    'Settings',
+                    style: TextStyle(color: Color(0xFF000080)),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const SettingsPage(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ],
@@ -194,3 +209,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
